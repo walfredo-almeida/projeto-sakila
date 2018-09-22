@@ -50,19 +50,34 @@
 						<li class="aw-menu__item">
 							<a th:href="@{/vinhos/novo}">
 								<i class="fa fa-address-book"></i>
-								
-		
 								<span>Cadastro vinho</span>
 							</a>
 		
 							<a th:href="@{/vinhos/}">
 								<i class="fa  fa-fw  fa-table"></i>
-		
 								<span>Lista vinhos</span>
 							</a>
+							
+							<a th:href="@{/vinhos/listaordenado/}">
+								<i class="fa  fa-fw  fa-table"></i>
+								<span>Lista vinhos ordenado</span>
+							</a>
+							<a th:href="@{/vinhos/listaordenado?ordenacao=nome&direcao=DESC}">
+								<i class="fa  fa-fw  fa-table"></i>
+								<span>Lista vinhos ordenado desc</span>
+							</a>
+							
+							<a th:href="@{/vinhos/buscar/}">
+								<i class="fa fa-search"></i>
+								<span>Pesquisar</span>
+							</a>
+							
+							<a th:href="@{/vinhos/buscar2/}">
+								<i class="fa fa-hourglass-o"></i>
+								<span>Pesquisar se contiver</span>
 							<a th:href="logout">
+							
 								<i class="fa fa-power-off" style="color:red"></i>
-		
 								<span>Sair do Sistema</span>
 							</a>
 						</li>

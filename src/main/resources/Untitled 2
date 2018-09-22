@@ -1,0 +1,19 @@
+@Query("select v from Vinho v where nome like %?1% ") 
+
+
+
+spring.datasource.url = jdbc:mysql://localhost:3306/vinhos?autoReconnect=true&useSSL=false
+spring.datasource.username = root
+spring.datasource.password = walfredo
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+<dependency>
+<groupId>com.h2database</groupId>
+<artifactId>h2</artifactId>
+<scope>runtime</scope>
+</dependency>
+
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+</dependency>
